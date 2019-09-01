@@ -1,0 +1,18 @@
+section .button, section button{
+  background-color: var(--green);
+  right: 25%;
+  bottom: 0;
+  position: absolute;
+}
+
+section p{
+  width: 100%;
+  color: var(--primary);
+  text-align: center;
+}
+
+#welcome{
+  width: 60vw;
+  height: auto;
+  z-index: 1;
+}
