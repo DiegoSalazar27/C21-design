@@ -1,0 +1,116 @@
+
+@import url("../myriad-pro-cufonfonts-webfont/font.css");
+
+* {
+  box-sizing: border-box
+}
+
+body {
+  --color: rgb(0,0,0);
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 50px;
+  padding: 20px;
+}
+
+.lesson {
+  font-family: "Myriad Pro Bold";
+  background-color: var(--color);
+  color: white;
+  width: 260px;
+  max-width: 260px;
+  height: 65px;
+  margin: 15px 0;
+  border-radius: 12px;
+  overflow: hidden;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.lesson > .inf {
+  width: 35%;
+  height: 100%;
+
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.inf > span {
+  margin: 0 0 0 5px;
+}
+
+.lesson > .title {
+  width: 65%;
+  height: 100%;
+
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 5px;
+}
+
+.lesson .img {
+  background-color: rgb(255, 255, 255);
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.inactive {
+  opacity: .4;
+  cursor: unset;
+}
+
+.current {
+  animation-name: currentLesson;
+  animation-delay: .5s;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  cursor: pointer;
+}
+
+.current:hover {
+  animation-name: unset;
+}
+
+@keyframes currentLesson {
+  0%,100% {
+    filter:brightness(125%);
+  }
+
+  15% {
+    transform: rotate(0deg);
+  }
+
+  25% {
+    transform: rotate(5deg);
+  }
+  
+  35% {
+    transform: rotate(-5deg);
+  }
+
+  45% {
+    transform: rotate(0deg);
+  }
+
+  50% {
+    filter:brightness(50%);
+  }
+  
+}

@@ -1,0 +1,85 @@
+@import url("../myriad-pro-cufonfonts-webfont/font.css");
+
+* {
+  box-sizing: border-box;
+}
+
+/*
+#FFFF00 Amarillo
+*/
+
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  height: 260px;
+  width: 650px;
+  display: grid;
+  grid-template-columns: .25fr .75fr;
+}
+
+.profilePics {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-items: center;
+  padding: 5px 0;
+}
+
+.pic {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: gray;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.pic > img {
+  width: 80%;
+  height: 80%;
+}
+
+.profileInf {
+  border-radius: 15px;
+  padding: 15px;
+  position: relative;
+  background-color: #FFFF00;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.profileInf > #selectedPic {
+  position: absolute;
+  width: 125px;
+  height: 125px;
+  top: 25px;
+  left: 25px;
+}
+
+.profileInf > table {
+  height: 100%;
+}
+
+.profileInf .variable {
+  font-family: "Myriad Pro Bold";
+  text-align: end;
+}
+
+.profileInf .value > input {
+  font-family: "Myriad Pro Bold";
+  border-radius: 5px;
+  border: none;
+  box-shadow: none;
+  padding: 2px 5px;
+}
