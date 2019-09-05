@@ -33,6 +33,14 @@ body{
   position: relative;
 }
 
+.container{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
 section{
   position: relative;
   /* margin-top: 5vh; */

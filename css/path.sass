@@ -1,0 +1,7 @@
+$left : 175px
+
+@for $i from 16 to 19
+  $left: $left + 102px
+  .roadicon:nth-child( #{$i})
+    left: $left
+    top: var(--thirdline)

@@ -1,6 +1,10 @@
 :root{
   --primary: #007BBF;
   --secondary: #0B307F;
+
+  --firstline: 60px;
+  --secondline: 245px;
+  --thirdline: 435px;
 }
 
 *{
@@ -16,6 +20,7 @@ header{
   align-items: center;
   width: 100%;
   height: 10vh;
+  z-index: 3;
 }
 
 header img{
@@ -67,4 +72,104 @@ section{
 
 .navbar a:nth-child(7n+7){
   background-color: var(--aquamarina);
+}
+
+#lessons{
+  width: 800px;
+  height: 600px;
+  position: relative;
+}
+
+.roadicon{
+  position: absolute;
+}
+
+.roadicon:nth-child(1){
+  left: 190px;
+  top: var(--firstline);
+}
+
+.roadicon:nth-child(2) {
+  left: 292px;
+  top: var(--firstline);
+}
+
+.roadicon:nth-child(3) {
+  left: 394px;
+  top: var(--firstline);
+}
+
+.roadicon:nth-child(4) {
+  left: 496px;
+  top: var(--firstline);
+}
+
+.roadicon:nth-child(5) {
+  left: 598px;
+  top: var(--firstline);
+}
+
+.roadicon:nth-child(6) {
+  left: 700px;
+  top: 86px;
+}
+
+.roadicon:nth-child(7) {
+  left: 715px;
+  top: 195px;
+}
+
+.roadicon:nth-child(8) {
+  left: 611px;
+  top: var(--secondline);
+}
+
+.roadicon:nth-child(9) {
+  left: 509px;
+  top: var(--secondline);
+}
+
+.roadicon:nth-child(10) {
+  left: 407px;
+  top: var(--secondline);
+}
+
+.roadicon:nth-child(11) {
+  left: 305px;
+  top: var(--secondline);
+}
+
+.roadicon:nth-child(12) {
+  left: 203px;
+  top: var(--secondline);
+}
+
+.roadicon:nth-child(13) {
+  left: 101px;
+  top: 270px;
+}
+
+.roadicon:nth-child(14) {
+  left: 80px;
+  top: 380px;
+}
+
+.roadicon:nth-child(15) {
+  left: 175px;
+  top: var(--thirdline);
+}
+
+.roadicon:nth-child(16) {
+  left: 277px;
+  top: var(--thirdline);
+}
+
+.roadicon:nth-child(17) {
+  left: 379px;
+  top: var(--thirdline);
+}
+
+.roadicon:nth-child(18) {
+  left: 481px;
+  top: var(--thirdline);
 }

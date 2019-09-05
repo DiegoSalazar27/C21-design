@@ -1,0 +1,16 @@
+.roadicon:nth-child(16) {
+  left: 277px;
+  top: var(--thirdline);
+}
+
+.roadicon:nth-child(17) {
+  left: 379px;
+  top: var(--thirdline);
+}
+
+.roadicon:nth-child(18) {
+  left: 481px;
+  top: var(--thirdline);
+}
+
+/*# sourceMappingURL=path.css.map */
