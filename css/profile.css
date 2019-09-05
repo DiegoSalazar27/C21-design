@@ -8,16 +8,6 @@
 #FFFF00 Amarillo
 */
 
-body {
-  margin: 0;
-  padding: 0;
-  width: 100%;
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
 .container {
   height: 260px;
   width: 650px;
@@ -33,10 +23,10 @@ body {
 }
 
 .pic {
-  width: 50px;
-  height: 50px;
+  width: 70px;
+  height: 70px;
   border-radius: 50%;
-  background-color: gray;
+  /* background-color: gray; */
 
   display: flex;
   justify-content: center;
@@ -64,7 +54,7 @@ body {
   width: 125px;
   height: 125px;
   top: 25px;
-  left: 25px;
+  left: 5px;
 }
 
 .profileInf > table {
@@ -72,12 +62,10 @@ body {
 }
 
 .profileInf .variable {
-  font-family: "Myriad Pro Bold";
   text-align: end;
 }
 
 .profileInf .value > input {
-  font-family: "Myriad Pro Bold";
   border-radius: 5px;
   border: none;
   box-shadow: none;
