@@ -45,6 +45,8 @@ body{
   box-sizing: border-box;
 }
 
+/*-----------New changes-------------*/
+
 header{
   background-color: var(--secondary);
   position: sticky;
