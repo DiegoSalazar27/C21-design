@@ -1,22 +1,4 @@
-
-@import url("../myriad-pro-cufonfonts-webfont/font.css");
-
-* {
-  box-sizing: border-box
-}
-
-body {
-  --color: rgb(0,0,0);
-  margin: 0;
-  padding: 0;
-  width: 100%;
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.container {
+.lessoncontainer {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-gap: 50px;
@@ -100,7 +82,7 @@ body {
   25% {
     transform: rotate(5deg);
   }
-  
+
   35% {
     transform: rotate(-5deg);
   }
@@ -112,5 +94,5 @@ body {
   50% {
     filter:brightness(50%);
   }
-  
+
 }
