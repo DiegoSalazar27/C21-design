@@ -26,30 +26,32 @@ function lessonsCreator () {
     lesson = document.createElement("div");
     inf = document.createElement("div");
     title = document.createElement("div");
-    img = document.createElement("div");
+    img = document.createElement("img");
     p = document.createElement("p");
     span = document.createElement("span");
 
     lesson.classList.add("lesson");
     if(i >= currentLesson){
       lesson.classList.add("inactive");
-    } 
+    }
     if ((i+1) == currentLesson) {
       lesson.classList.add("current");
     }
     inf.classList.add("inf");
     title.classList.add("title");
     img.classList.add("img");
+    img.src = "../../img/games/write.svg";
 
     span.innerHTML = (i < 9)? "0" + (i+1): i+1;
     p.innerHTML = "This is some Lesson! Have fun!";
 
     inf.appendChild(span);
-    inf.appendChild(img);
+    // inf.appendChild(img);
     title.appendChild(p);
 
     lesson.appendChild(inf);
     lesson.appendChild(title);
+    lesson.appendChild(img);
 
     lesson.style.setProperty("--color", color[colorIndex]);
 
