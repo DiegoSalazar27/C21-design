@@ -10,6 +10,12 @@ function lessonsCreator () {
   let lesson, inf, title, img, p, span;
   var right = document.getElementById("right");
   var left = document.getElementById("left");
+
+  const svg = document.getElementById('svg');
+  let svgC = svg.contentDocument;
+  const papa = svgC.getElementById('papa');
+  papa.setAttribute('fill', "#0904ff");
+
   let l = (nLessons % 2 == 0)? nLessons/2 : parseInt(nLessons/2) + 1;
   let color = [
     "rgb(248, 206, 0)",
@@ -21,7 +27,6 @@ function lessonsCreator () {
     "rgb(0, 172, 146)"
   ];
   colorIndex = 0;
-  alert (l);
   for (let i = 0 ; i < nLessons; i++) {
     lesson = document.createElement("div");
     inf = document.createElement("div");
@@ -46,7 +51,7 @@ function lessonsCreator () {
     p.innerHTML = "This is some Lesson! Have fun!";
 
     inf.appendChild(span);
-    // inf.appendChild(img);
+    inf.appendChild(img);
     title.appendChild(p);
 
     lesson.appendChild(inf);
@@ -65,3 +70,5 @@ function lessonsCreator () {
     colorIndex++;
   }
 }
+
+// const svgColor =
